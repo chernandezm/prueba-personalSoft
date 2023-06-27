@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<ItemGroup>
+	  <Compile Remove="Mapper\Generic\**" />
+	  <EmbeddedResource Remove="Mapper\Generic\**" />
+	  <None Remove="Mapper\Generic\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="Azure.Storage.Blobs" Version="12.13.1" />
+	  <PackageReference Include="Microsoft.AspNetCore.SignalR.Core" Version="1.1.0" />
+	  <PackageReference Include="Microsoft.Extensions.Options" Version="6.0.0" />
+	  <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.23.1" />
+	  <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.23.1" />
+	  <PackageReference Include="Xolit.Herramientas" Version="1.2.1" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\Prueba.Api.Model\Prueba.Api.Model.csproj" />
+	  <ProjectReference Include="..\Prueba.Api.Repository\Prueba.Api.Repository.csproj" />
+	  <ProjectReference Include="..\Prueba.Api.Services\Prueba.Api.Services.csproj" />
+	</ItemGroup>
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+	</PropertyGroup>
+
+</Project>
